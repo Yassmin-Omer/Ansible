@@ -1,0 +1,21 @@
+Playbook:
+1-Install
+      - httpd
+      for all
+      
+      - php 
+      - php-common 
+      - php-pecl-apcu 
+      - php-cli 
+      - php-mysqlnd
+      if the total memory larger than 1G
+2-Create variable sites:
+	sites:
+	  ahmed.com
+	  /var/www/html/ahmed.com
+	   username: ahmed
+	   password:
+	  name: mohamed.com
+	  /var/www/html/mohamed.com
+	   username: mohamed
+	   password:
